@@ -1,0 +1,1 @@
+This holds info about JS2 project.
