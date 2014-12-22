@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript Functions</title>
+</head>
+<body>
+
+<script>
+  function changeText()
+  {
+	var x = document.getElementById("p2");
+	x.innerHTML = "Hello JavaScript!!!";
+	var y = document.getElementsByName("button1");
+	y[0].innerHTML = "Something for the text area....";
+	//alert(y[2].innerHTML);
+  }
+  
+  function changeText1(elementId)
+  {
+		var x = document.getElementById(elementId);
+		x.innerHTML = "Hello JavaScript Parameters!!!";	  
+  }
+  
+</script>
+
+<p id="p1">
+JavaScript Functions Exercise
+</p>
+
+<p id="p2">
+Change this text... 
+</p>
+
+<textarea name = "button1" rows="" cols=""></textarea>
+<button name="button1" type="button" onClick="changeText()">Click Me</button>
+<button name="button1" type="button" onClick="changeText1('p2')">Click Me for Parameter Function</button>
+
+
+</body>
+</html>

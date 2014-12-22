@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript Objects, Arrays, For Loops</title>
+</head>
+<body>
+
+<p><h1>Displaying JavaScript Objects and Array Values with For Loops</h1></p>
+
+<script>
+
+//var car = {make:"Ford", model:"Mustang", color:"Red", year:2014};
+
+/*
+var car = new Object();
+car.make = "Ford";
+car.model = "Mustang";
+car.color = "Red";
+car.year = 2014;
+*/
+
+/*
+ * This is a constructor that creates a car object with four attributes.
+ */
+function car(makeP, modelP, colorP, yearP)
+{
+	this.make = makeP;
+	this.model = modelP;
+	this.color = colorP;
+	this.year = yearP;
+}
+
+var toyota = new car("Toyota", "Camry", "White", 2014);
+var corvette = new car("Ford", "Corvette", "Black", 2014);
+var accord = new car("Honda", "Accord", "Black", 2015);
+
+var vehicles = new Array();
+
+vehicles[0] = toyota;
+vehicles[1] = corvette;
+vehicles[2] = accord;
+
+var i; //counter
+
+/*
+i		vehicles.length		condition (i < vehicles.length)
+0		3					true > execute for toyota
+1		3					true > execute for corvette
+2		3					true > execute for accord
+3		3					false > EXIT the for loop
+*/
+
+for(i = 0; i < vehicles.length; i++)
+{
+	document.write("Array value: " + vehicles[i].make + " " + vehicles[i].model  + " at index value: " + i + "<br>");
+}
+
+
+//document.writeln("Toyota:  " + toyota.make + " " + toyota.model + " " + toyota.color + " " + toyota.year + "<br>");
+//document.writeln("Corvette:  " + corvette.make + " " + corvette.model + " " + corvette.color + " " + corvette.year + "<br>");
+//document.writeln("Accord:  " + accord.make + " " + accord.model + " " + accord.color + " " + accord.year);
+
+//document.write("Array value: " + trucks[i] + " at index value: " + i + "<br>");
+</script>
+
+</body>
+</html>
