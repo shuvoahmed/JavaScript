@@ -1,1 +1,1 @@
-This holds info about JS2 project.
+This holds info about JS2 project.  Updated by Bappy.
