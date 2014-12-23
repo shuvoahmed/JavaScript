@@ -1,1 +1,1 @@
-This holds info about JS2 project.  Test update from client machine.
+This holds info about JS2 project.
